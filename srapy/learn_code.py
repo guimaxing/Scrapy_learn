@@ -10,13 +10,12 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-import config
-# from config import url
-
+# import config
+from config import url
 
 print(url)
-# html = urlopen("http://en.wikipedia.org/wiki/Kevin_Bacon/")
-# bsobj = BeautifulSoup(html)
-# for link in bsobj.findAll("a"):
-#     if 'href'  in link.attrs:
-#         print(link.attrs['href'])
+html = urlopen(url)
+bsobj = BeautifulSoup(html)
+for link in bsobj.findAll("a"):
+    if 'href' in link.attrs:
+        print(link.attrs['href'])

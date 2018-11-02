@@ -9,3 +9,5 @@
 '''
 
 url = "https://movie.douban.com/nowplaying/hangzhou/"
+# url = "http://en.wikipedia.org/wiki/Kevin_Bacon/"
+# b = 'ggggggggggggggggggggggg'
